@@ -1,6 +1,6 @@
 import java.lang.*;
-
-public class lec16 {
+// lec number : 16
+public class numberToBinary {
 	public static void main(String[] args) {
 		int postiveNum = 4;
 		int negativeNum = -4;

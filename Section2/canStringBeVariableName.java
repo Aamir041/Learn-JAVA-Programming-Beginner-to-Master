@@ -1,6 +1,6 @@
 import java.lang.*;
-
-public class lec14 {
+// lec number : 14
+public class canStringBeVariableName {
 	public static void main(String[] args) {
 		int String;
 		String = 10;
