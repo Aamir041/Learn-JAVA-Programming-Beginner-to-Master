@@ -26,6 +26,26 @@ public class studentChallenge2{
 
 
 // Find if a given year is leap year or not
+// a leap year should be divisible by 4,  400 and not be divisible by 100
+
+        System.out.printf("Enter year: ");
+        int year = in.nextInt();
+        if(year%4 == 0){
+        	if(year%100 == 0){
+        		if(year%400 == 0){
+        			System.out.printf("It is a Leap year\n");
+        		}
+        		else{
+        			System.out.printf("It is not a Leap year\n");
+        		}
+        	}
+        	else{
+        		System.out.printf("It is a Leap year\n");
+        	}
+        }
+        else {
+            System.out.printf("It is not a Leap year\n");	
+        }
 
 
 	}
