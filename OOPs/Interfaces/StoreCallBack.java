@@ -26,6 +26,8 @@ class customer implements member{
 	customer(String name){
 		this.name = name;
 	}
+
+	@Override
 	public void callback(){
 		System.out.println("Invitation send to " + name);
 	}
