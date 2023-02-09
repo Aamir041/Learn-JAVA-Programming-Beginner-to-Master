@@ -3,6 +3,7 @@ package mypack1;
 
 // Subclass of Demo1
 public class Demo3 extends Demo1{
+	
 	/*  
 	  X------------------------------X
 	  | commented one are those that | 
