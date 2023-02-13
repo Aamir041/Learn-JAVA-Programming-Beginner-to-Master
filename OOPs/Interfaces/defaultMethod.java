@@ -23,7 +23,7 @@ class englishGreet implements sayHello{
     }
 }
 
-public class HelloWorld{
+public class defaultMethod{
     public static void main(String[] args) {
         sayHello h1 = new englishGreet();
         h1.sayHi();
