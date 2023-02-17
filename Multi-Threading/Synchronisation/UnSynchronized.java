@@ -1,0 +1,325 @@
+class MyData{
+	public void display(String s){
+		
+		for(int i=0; i<s.length(); i++){
+			System.out.println(s.charAt(i));
+		}
+	}
+}
+
+class MyThread1 extends Thread{
+	MyData md;
+	
+	MyThread1(MyData data){
+		md = data;
+	}
+
+	public void run(){
+		md.display("KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK");
+	}
+}
+
+class MyThread2 extends Thread{
+	MyData md;
+	
+	MyThread2(MyData data){
+		md = data;
+	}
+
+	public void run(){
+		md.display("UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU");
+	}
+}
+
+public class UnSynchronized{
+	public static void main(String[] args) {
+		MyData md = new MyData();
+		MyThread1 t11 = new MyThread1(md);
+		MyThread2 t21 = new MyThread2(md);
+		t11.start();
+		t21.start();
+	}
+}
+
+/*  OUTPUT WILL BE SOMETHING LIKE THIS : here object is shared and it is sharing object in unsynchronized fashion
+
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    U
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+    K
+
+*/
