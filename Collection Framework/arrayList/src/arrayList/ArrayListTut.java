@@ -43,6 +43,10 @@ public class ArrayListTut{
 
 		al1.set(8,44);
 		System.out.println(al1); // [20, 10, 11, 14, 24, 34, 22, 33, 44] --> al1
+		
+		Iterator<Integer> it = al1.iterator();
+		
+		
 
 	}
 
