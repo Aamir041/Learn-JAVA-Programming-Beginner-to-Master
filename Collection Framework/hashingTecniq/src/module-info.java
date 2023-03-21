@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author Aamir
+ *
+ */
+module hashingTecniq {
+}

@@ -26,10 +26,6 @@ public class StackTut {
 		stack.forEach(x -> System.out.print(x + " "));
 		System.out.println();
 
-		Iterator<Integer> it = stack.iterator();
-		while(it.hasNext()) {
-			System.out.print(it.next()+" ");
-		}
 		
 	}
 

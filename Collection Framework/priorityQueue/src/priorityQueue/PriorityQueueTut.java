@@ -15,27 +15,27 @@ public class PriorityQueueTut {
 		
 //		Default Priority Queue
 		PriorityQueue<Integer> pq = new PriorityQueue<>();
-//		pq.add(7);
-//		pq.add(3);
-//		pq.add(15);
-//		pq.add(42);
-//		pq.add(12);
-//		pq.add(27);
-//		pq.add(99);
-//		
-//		System.out.println("This is head element: "+pq.peek());
-//		pq.forEach(x -> System.out.print(x+" "));
-//		System.out.println();
-//		
-//		pq.poll();
-//		System.out.println("After head element removed.");
-//		pq.forEach(x -> System.out.print(x+" "));
-//		System.out.println();
-//		
-//		pq.poll();
-//		System.out.println("After head element removed.");
-//		pq.forEach(x -> System.out.print(x+" "));
-//		System.out.println();
+		pq.add(7);
+		pq.add(3);
+		pq.add(15);
+		pq.add(42);
+		pq.add(12);
+		pq.add(27);
+		pq.add(99);
+		
+		System.out.println("This is head element: "+pq.peek());
+		pq.forEach(x -> System.out.print(x+" "));
+		System.out.println();
+		
+		pq.poll();
+		System.out.println("After head element removed.");
+		pq.forEach(x -> System.out.print(x+" "));
+		System.out.println();
+		
+		pq.poll();
+		System.out.println("After head element removed.");
+		pq.forEach(x -> System.out.print(x+" "));
+		System.out.println();
 		
 //		Implementing Priority Queue where bigger the number bigger the priority
 		PriorityQueue<Integer> pq2 = new PriorityQueue<>(new MyComp());
@@ -60,8 +60,6 @@ public class PriorityQueueTut {
 		System.out.println("After head element removed.");
 		pq2.forEach(x -> System.out.print(x+" "));
 		System.out.println();
-		
-		
 
 	}
 
